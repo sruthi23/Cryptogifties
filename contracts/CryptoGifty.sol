@@ -14,4 +14,14 @@ contract CryptoGifty is MintableToken{
 		return totalSupply_;
 	}
 
+	function getValue() public returns(uint256)
+	{
+		return token_value;
+	}
+
+	function getBalance(address _adr) public returns(uint256)
+	{
+		return balances[_adr];
+	}
+
 }
